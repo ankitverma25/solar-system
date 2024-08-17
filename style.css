@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.solarsystem {
+    position: relative;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.sun {
+    border-radius: 50%;
+    background-color: yellow;
+    height: 50px;
+    width: 50px;
+    transform: translate(50vw, 50vh);
+    box-shadow: 0px 0px 300px 45px yellow, 0px 0px 70px yellow;
+}
+
+.mercury-orbit {
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 64%;
+    height: 180px;
+    width: 180px;
+    left: 45vw;
+    top: 42vh;
+    /* border: 1px solid grey; */
+    animation: rotate 15s linear infinite;
+}
+
+.planet-mercury {
+    border-radius: 50%;
+    position: absolute;
+    background-color: azure;
+    width: 10px;
+    height: 10px;
+    left: 54px;
+}
+
+@keyframes rotate {
+    from {}
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.venus-orbit {
+    box-sizing: border-box;
+    padding: 20px;
+    position: absolute;
+    border-radius: 64%;
+    height: 262px;
+    width: 263px;
+    left: 42vw;
+    top: 37vh;
+    /* border: 1px solid grey; */
+    animation: rotate 25s linear infinite;
+}
+
+.planet-venus {
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgb(98, 30, 6);
+    width: 15px;
+    height: 15px;
+    left: 43px;
+}
+
+.earth-orbit {
+    box-sizing: border-box;
+    padding: 20px;
+    position: absolute;
+    border-radius: 64%;
+    height: 320px;
+    width: 320px;
+    left: 40vw;
+    top: 33vh;
+    /* border: 1px solid grey; */
+    animation: rotate 20s linear infinite;
+}
+
+
+.planet-earth {
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(135deg, #1e90ff, #32cd32);
+    width: 20px;
+    height: 20px;
+    left: 56px;
+}
+
+.earth-moon-orbit {
+    position: absolute;
+    border-radius: 51%;
+    height: 30px;
+    width: 30px;
+    left: -6px;
+    top: -7px;
+    border: 1px solid rgb(34, 34, 34);
+    animation: rotate 5s linear infinite;
+}
+
+.earth-moon {
+    border-radius: 50%;
+    position: absolute;
+    background-color: white;
+    width: 5px;
+    height: 5px;
+    left: 22px;
+}
+
+.mars-orbit {
+    box-sizing: border-box;
+    padding: 20px;
+    position: absolute;
+    border-radius: 64%;
+    height: 400px;
+    width: 400px;
+    left: 37vw;
+    top: 28vh;
+    /* border: 1px solid grey; */
+    animation: rotate 10s linear infinite;
+}
+
+.planet-mars {
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(135deg, #6f3c0f, #ff7b08);
+    width: 20px;
+    height: 20px;
+    left: 81px;
+}
+
+@keyframes twinkle {
+
+    0%,
+    100% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.star {
+
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white;
+    animation: twinkle 2s infinite ease-in-out;
+}
